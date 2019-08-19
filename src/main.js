@@ -1,9 +1,14 @@
-const a = 3;
-const b = 2;
-const c = "asdf asdf asdfasdfasdfasdfasdfasdfasdfasdfasdf asdf asdf asdfasdf asdfa sdfasdf asdf";
+console.log("A ")
+console.log("B ")
 
-function sum() {
-    return a + b + c;
+function sum(a, b, c) {
+
+    let f = a + b + c
+    if (a === "3") {
+        console.log("teste");
+    }
 }
 
-sum()
+
+
+console.log("teste")
