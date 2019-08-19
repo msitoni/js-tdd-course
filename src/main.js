@@ -3,7 +3,7 @@ console.log("B ")
 
 function sum(a, b, c) {
 
-    let f = a + b + c
+    let f = a + b + c;
     if (a === "3") {
         console.log("teste");
     }
@@ -11,4 +11,4 @@ function sum(a, b, c) {
 
 
 
-console.log("teste")
+console.log("teste");
