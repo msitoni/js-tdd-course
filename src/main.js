@@ -1,5 +1,5 @@
-console.log("A ")
-console.log("B ")
+console.log("A ");
+console.log("B ");
 
 function sum(a, b, c) {
 
