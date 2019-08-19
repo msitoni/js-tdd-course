@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>01 - Intro Arrow Function</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    const ireland = ['Dublin', 'Galway', 'Cork'];
+    const love = ireland.map(function(name) {
+        return `I love ${name}!`;
+    });
+    const loveArrow = ireland.map((name) => {
+        return `I love ${name}!`;
+    });
+    const loveArrowSingle = ireland.map(name => {
+        return `I love ${name}!`;
+    });
+    const loveArrowOneLine = ireland.map(name => `I love ${name}!`);
+    const loveChain = ireland
+        .filter(name => name === 'Dublin')
+        .map(name => `I love ${name}!`);
+    console.log(ireland);
+    console.log(love);
+    console.log(loveArrow);
+    console.log(loveArrowSingle);
+    console.log(loveChain);
+
+
+    let gtu = [{
+        enrollnumber: 18,
+        name: 'Shree'
+    }, {
+        enrollnumber: 21,
+        name: 'Krunal'
+    }, {
+        enrollnumber: 22,
+        name: 'Rushikesh'
+    }];
+
+    let mappedArrayObj = gtu.map(obj => {
+        let newObj = {};
+        newObj[obj.enrollnumber] = obj.name;
+        return newObj;
+    });
+
+    console.log(mappedArrayObj);
+</script>
+
+</html>

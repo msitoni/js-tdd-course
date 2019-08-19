@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>03 - This no Arrow Function</title>
+</head>
+
+<body>
+
+    <button id="btn">Make my sandwich!</button>
+</body>
+
+<script>
+    const sandwich = {
+        bread: 'white',
+        cheese: 'cheddar',
+        teste: function() {
+            console.log(`I want a sandwich with ${this.bread} bread and ${this.cheese} cheese!`);
+        }
+    };
+
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', function() {
+        sandwich.teste()
+    });
+</script>
+
+</html>
